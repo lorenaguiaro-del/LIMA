@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formatação de links em HTML e CSS">
+    <title>Formatação de links</title>
+    <style>
+        body {
+            background-color: black
+        }
+        h1 {
+            color: White;
+        }
+        /*Link normal*/
+        a:link {
+            color: blue;
+            /*text-decoration: none;*/
+        }
+        /*Link já visitado*/
+        a:visited {
+            color: yellow;
+        }
+        /*Quando o mouse passa por cima do link*/
+        a:hover {
+            color: aqua;
+            text-decoration: underline;
+            font-size: 100px;
+        }
+        /*Enquanto o link é clicado)*/
+        a:active {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Links com CSS</h1>
+    <p><a href="#">Ir para a página de links</a></p>
+</body>
+</html>
