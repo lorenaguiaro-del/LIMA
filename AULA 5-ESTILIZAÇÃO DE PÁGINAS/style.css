@@ -1,0 +1,84 @@
+* {
+    /*seletor universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.destaque {
+    /*seletor por classes*/
+    color: orange;
+    font-weight: bold;
+}
+
+#titulo-principal {
+    /*seletor por id*/
+    color: grey;
+    text-align: center;
+}
+
+p {
+    /*seletor por tag*/
+    font-size: 18px;
+    line-height: 1.5;
+    color: orange
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey
+}
+
+h4 {
+    color: rgb(255, 157, 0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /*espaçamento entre linhas*/
+    letter-spacing: 2px;
+    /*espaçamento entre letras*/
+    word-spacing: 5px;
+    /*espacamento entre palavras*/
+}
+
+.img {
+    width: 700px;
+    height: 0 auto;
+    border: 2px solid orange;
+    margin: 0 auto;
+    /*centraliza o elemento horizontalmente, desde que tenha uma largura (width) definida)*/
+    display: block;
+    /*faz o elemento se comportar como um bloco(ocupa toda a linha sozinha)*/
+}
+
+.lista {
+    list-style-type: square;
+    margin: 20px;
+    padding: 0px;
+}
+
+.tabela {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    font-size: 20px;
+}
