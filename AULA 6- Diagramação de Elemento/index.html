@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Diagramação de Elementos</title>
 </head>
 <style>
     .container {
         width: 400px;
         height: 400px;
+        margin: 0 auto;
+        padding: 20px;
         justify-content: left;
-        border: 6px solid black;
+        background-color: white;
+        border: 3px solid black;
         box-shadow: 2px 4px black;
+        position: relative;
+        float: right;
     }
+
     img {
         width: 100px;
         height: 100px;
         background-color: orange;
+        position: fixed;
+        left: 100px;
     }
+
     span {
         font-size: 20px;
         vertical-align: bottom;
     }
+
     .item1 {
-      width: 150px;
-      height: 150px;
-      background-color: rgba(0,0,225);  
-      display: inline-block;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        background-color: red;
+        display: inline-block;
+        position: relative;
+        left: 30px;
+        z-index: 1;
     }
+
     .item2 {
         width: 150px;
         height: 150px;
-        background-color: rgba(255,0,0);
+        text-align: center;
+        background-color: blue;
         display: inline-block;
+        position: absolute;
+        right: 150px;
+        z-index: 2;
     }
 </style>
 
+
 <body>
     <div class="container">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-        <button>Lorem</button>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facere iste repudiandae a ipsa
+            adipisci quo alias laborum temporibus id, reprehenderit animi! Dolor soluta eaque ipsam accusamus cum
+            voluptatem minima?</p>
+        <button>Loren</button>
         <div>
             <img>
             <span>Exemplo vertical-align</span>
         </div>
-        <div class="item1">Item 1</div>
-        <div class="item2">Item 2</div>
+        <div class="item1"> Item 1</div>
+        <div class="item2"> Item 2</div>
+    </div>
 </body>
+
 
 </html>
